@@ -49,8 +49,7 @@
                     <h1 class="display-5 animated fadeIn mb-4">Property List</h1> 
                         <nav aria-label="breadcrumb animated fadeIn">
                         <ol class="breadcrumb text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
                             <li class="breadcrumb-item text-body active" aria-current="page">Property List</li>
                         </ol>
                     </nav>
@@ -62,9 +61,8 @@
         </div>
         <!-- Header End -->
 
-
         <!-- Search Start -->
-        <form action="{% url 'property_search' %}" method="POST" class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+        <form action="{% url 'property_search2' %}" method="POST" class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
             {% csrf_token %}
             <div class="container">
                 <div class="row g-2">
@@ -92,7 +90,7 @@
                                         <option value="{{ address }}">{{ address }}</option>
                                     {% endfor %}
                                 </select>
-                            </div>                            
+                            </div> 
                         </div>
                     </div>
                     <div class="col-md-2">

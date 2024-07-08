@@ -200,6 +200,12 @@
     .header-carousel .owl-nav {
         left: 25px;
     }
+    .menu {
+        display: none; /* Initially hidden */
+      }
+      .menu.active {
+        display: block; /* Show when active */
+      }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
